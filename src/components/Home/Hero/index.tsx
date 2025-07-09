@@ -81,7 +81,7 @@ const Hero = () => {
                 <a
                   href="https://github.com/Defendstack/DefendStack-Suite?tab=readme-ov-file#installation"
                   rel="noopener noreferrer"
-                  className="cursor-pointer bg-primary border border-primary rounded-lg text-20 font-medium text-white py-2 px-7 z-50 flex items-center gap-2"
+                  className="cursor-pointer bg-primary border border-primary rounded-lg text-20 font-medium text-white py-2 px-7 flex items-center gap-2"
                 >
                   <Image
                     src="/images/hero/download.png"

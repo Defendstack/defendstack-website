@@ -12,66 +12,83 @@ const Footer: FC = () => {
       <div className="container px-4">
         <div className=" flex items-start justify-between lg:gap-20 md:gap-6 sm:gap-12 gap-4 pb-16">
           <div className="">
-            <div className="-mr-4">
+            <div className="">
               <Logo />
             </div>
-            <div className="flex gap-6 items-center mt-8 relative z-1">
-              <Link href="#" className="group">
-                <Icon
-                  icon="fa6-brands:facebook-f"
-                  width="24"
-                  height="24"
-                  className="text-white group-hover:text-primary"
-                />
-              </Link>
-              <Link href="#" className="group">
-                <Icon
-                  icon="fa6-brands:instagram"
-                  width="24"
-                  height="24"
-                  className="text-white group-hover:text-primary"
-                />
-              </Link>
-              <Link href="#" className="group">
-                <Icon
-                  icon="fa6-brands:x-twitter"
-                  width="24"
-                  height="24"
-                  className="text-white group-hover:text-primary"
-                />
+            <div className="ml-3">
+              <div className="flex gap-6 items-center mt-8 relative z-1">
+                <Link href="https://x.com/DefendStack" className="group">
+                  <Icon
+                    icon="fa6-brands:x-twitter"
+                    width="24"
+                    height="24"
+                    className="text-white group-hover:text-primary"
+                  />
+                </Link>
+                <Link
+                  href="https://discord.com/invite/CSeVbCvK"
+                  className="group"
+                >
+                  <Icon
+                    icon="fa6-brands:discord"
+                    width="24"
+                    height="24"
+                    className="text-white group-hover:text-primary"
+                  />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/company/defendstack/"
+                  className="group"
+                >
+                  <Icon
+                    icon="fa6-brands:linkedin"
+                    width="24"
+                    height="24"
+                    className="text-white group-hover:text-primary"
+                  />
+                </Link>
+                <Link
+                  href="https://github.com/Defendstack/DefendStack-Suite/"
+                  className="group"
+                >
+                  <Icon
+                    icon="fa6-brands:github"
+                    width="24"
+                    height="24"
+                    className="text-white group-hover:text-primary"
+                  />
+                </Link>
+              </div>
+              <h3 className="text-white text-24 font-medium sm:mt-20 mt-12">
+                2025 Copyright
+              </h3>
+              <Link
+                className="text-white text-24 font-medium sm:mt-20 mt-12 hover:text-primary"
+                target="_blank"
+                href="https://getnextjstemplates.com/"
+              >
+                @ DefendStack
               </Link>
             </div>
-            <h3 className="text-white text-24 font-medium sm:mt-20 mt-12">
-              2025 Copyright
-            </h3>
-            <Link
-              className="text-white text-24 font-medium sm:mt-20 mt-12 hover:text-primary"
-              target="_blank"
-              href="https://getnextjstemplates.com/"
-            >
-              @ DefendStack
-            </Link>
           </div>
           <div className="flex items-start lg:gap-20 md:gap-6 sm:gap-12 gap-4">
+            <div className="">
+              <h4 className="text-white mb-4 font-medium text-24">Products</h4>
+              <ul>
+                {productslabels.map((item, index) => (
+                  <li key={index} className="pb-4">
+                    <Link
+                      href={item.href}
+                      className="text-white hover:text-primary text-17"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div>
               <div className="">
-                <h4 className="text-white mb-4 font-medium text-24">
-                  Products
-                </h4>
-                <ul>
-                  {productslabels.map((item, index) => (
-                    <li key={index} className="pb-4">
-                      <Link
-                        href={item.href}
-                        className="text-white hover:text-primary text-17"
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-2">
                 <h4 className="text-white mb-4 font-medium text-24">
                   Resources
                 </h4>
@@ -88,22 +105,25 @@ const Footer: FC = () => {
                   ))}
                 </ul>
               </div>
+              <div className="mt-4">
+                <h4 className="text-white mb-4 font-medium text-24">
+                  Security
+                </h4>
+                <ul className="w-3/4">
+                  {securitylabels.map((item, index) => (
+                    <li key={index} className="pb-4">
+                      <Link
+                        href={item.href}
+                        className="text-white hover:text-primary text-17"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="">
-              <h4 className="text-white mb-4 font-medium text-24">Security</h4>
-              <ul>
-                {securitylabels.map((item, index) => (
-                  <li key={index} className="pb-4">
-                    <Link
-                      href={item.href}
-                      className="text-white hover:text-primary text-17"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+
             <div className="">
               <h3 className="text-white text-24 font-medium">Subscribe</h3>
               <p className="text-muted/60 text-18 mt-5">

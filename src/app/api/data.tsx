@@ -1,18 +1,24 @@
 import { title } from "process";
 
 export const resourcelabels: { label: string; href: string }[] = [
-  { label: "Blog", href: "#" },
-  { label: "Documentation", href: "#" },
+  { label: "Blog", href: "/coming-soon" },
+  { label: "Documentation", href: "https://docs.defendstack.org/Documentation/Introduction" },
 ];
 
 export const securitylabels: { label: string; href: string }[] = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Vulnerability Disclosure Program", href: "#" },
+  { label: "Vulnerability Disclosure Program", href: "/coming-soon" },
 ];
 
 export const productslabels: { label: string; href: string }[] = [
-  { label: "DefendStack Secrets", href: "#" },
-  { label: "DefendStack SCA", href: "#" },
+  {
+    label: "DefendStack Secrets",
+    href: "https://docs.defendstack.org/DefendStack-Secrets/Introduction",
+  },
+  {
+    label: "DefendStack SCA",
+    href: "https://docs.defendstack.org/DefendStack-SCA/Introduction",
+  },
+  { label: "DefendStack ASM", href: "/coming-soon" },
 ];
 
 export const features: {
