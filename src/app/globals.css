@@ -167,3 +167,7 @@ section {
 .blog-details h3 {
   @apply mb-6 text-2xl font-bold dark:text-white sm:text-[28px] sm:leading-[40px];
 }
+
+body{
+  overflow-x: hidden;
+}

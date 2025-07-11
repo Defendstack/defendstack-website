@@ -39,7 +39,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
         )}
       </Link>
       {submenuOpen && item.submenu && (
-        <div className="bg-primary p-2 w-48 shadow rounded">
+        <div className="p-2 w-48 shadow rounded">
           {item.submenu.map((subItem, index) => (
             <Link
               key={index}

@@ -31,7 +31,7 @@ const TimeLine = () => {
             </h2>
 
             <h2 className="text-white sm:text-18 text-18 lg:w-80% mx-auto mb-20 mt-2">
-              Behind The Firewall is a team of experienced security engineers
+              Behind The DefendStack is a team of experienced security engineers
               and researchers. We've been in the trenches, we've seen the
               threats, and we know what it takes to stay protected. Our platform
               offers a comprehensive suite of enterprise-grade features to

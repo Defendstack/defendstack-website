@@ -135,28 +135,19 @@ const Header: React.FC = () => {
             {headerData.map((item, index) => (
               <MobileHeaderLink key={index} item={item} />
             ))}
-            <div className="mt-4 flex flex-col gap-4 w-full">
-              <Link
-                href="#"
-                className="bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
-                onClick={() => {
-                  setIsSignInOpen(true);
-                  setNavbarOpen(false);
-                }}
-              >
-                Sign In
-              </Link>
-              <Link
-                href="#"
-                className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-                onClick={() => {
-                  setIsSignUpOpen(true);
-                  setNavbarOpen(false);
-                }}
-              >
-                Sign Up
-              </Link>
-            </div>
+            <a
+              href="https://github.com/Defendstack/DefendStack-Suite"
+              rel="noopener noreferrer"
+              className="flex bg-primary text-white px-8 py-2 rounded-lg items-center w-full justify-center gap-2"
+            >
+              <Image
+                src="/images/hero/github.png"
+                alt="icon"
+                width={17}
+                height={17}
+              />
+              <span>Github</span>
+            </a>
           </nav>
         </div>
       </div>

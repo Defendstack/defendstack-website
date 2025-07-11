@@ -37,10 +37,10 @@ const CardSlider = () => {
     ],
   };
   return (
-    <div className="lg:mt-16 mt-16">
+    <div className="overflow-x-hidden lg:mt-16 mt-16">
       <Slider {...settings}>
         {features.map((item, index) => (
-          <div key={index} className="pr-6">
+          <div key={index} className="overflow-x-hidden pr-6">
             <div className="px-5 py-6 bg-dark_grey/80 rounded-xl">
               <div className="flex items-center gap-3">
                 <Image

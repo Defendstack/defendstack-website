@@ -63,12 +63,10 @@ const Hero = () => {
             {...leftAnimation}
             className="lg:col-span-6 col-span-12 py-10 mx-3.5"
           >
-            <span className="font-bold flex lg:justify-start justify-center text-white sm:text-5xl text-28 mb-0">
-              Open Source Shift
-            </span>
-            <span className="font-bold text-primary sm:text-5xl text-28 mb-0">
-              Left Framework
-            </span>
+            <h2 className="font-bold lg:text-start text-center text-white sm:text-5xl text-28 mb-0">
+              Open Source Shift <br />
+              <span className="text-primary">Left Framework</span>
+            </h2>
 
             <h1 className="font-light lg:text-20 md:text-20 text-18 lg:text-start text-center text-white mb-10">
               The DefendStack is a comprehensive Application Security Platform
@@ -76,12 +74,12 @@ const Hero = () => {
               giving security teams complete visibility and control. But here's
               the kicker—it's completely free.
             </h1>
-            <div className="flex items-center lg:justify-start justify-center gap-5">
-              <div className="flex items-center lg:justify-start justify-center gap-5">
+            <div className="flex lg:justify-start justify-center w-full">
+              <div className="flex lg:justify-start flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md">
                 <a
                   href="https://github.com/Defendstack/DefendStack-Suite?tab=readme-ov-file#installation"
                   rel="noopener noreferrer"
-                  className="cursor-pointer bg-primary border border-primary rounded-lg text-20 font-medium text-white py-2 px-7 flex items-center gap-2"
+                  className="flex items-center justify-center cursor-pointer bg-primary border border-primary rounded-lg text-20 font-medium text-white py-2 px-7 gap-2 w-full sm:w-auto"
                 >
                   <Image
                     src="/images/hero/download.png"
@@ -94,7 +92,7 @@ const Hero = () => {
                 <a
                   href="/coming-soon"
                   rel="noopener noreferrer"
-                  className="cursor-pointer bg-transparent border border-primary rounded-lg text-20 font-medium text-primary py-2 px-7 flex items-center gap-2"
+                  className="flex items-center justify-center cursor-pointer bg-transparent border border-primary rounded-lg text-20 font-medium text-primary py-2 px-7 gap-2 w-full sm:w-auto"
                 >
                   <span>Learn More</span>
                   <Image

@@ -12,7 +12,7 @@ const Logo: React.FC = () => {
         style={{ width: "auto", height: "50px" }}
         quality={100}
       />
-      <h1 className="text-22 font-medium">Defend</h1>
+      <h1 className="text-22 font-medium text-white">Defend</h1>
       <span className="text-22 font-medium text-primary">Stack</span>
     </Link>
   );

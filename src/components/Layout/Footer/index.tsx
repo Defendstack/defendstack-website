@@ -10,12 +10,12 @@ const Footer: FC = () => {
   return (
     <footer className="bg-darkmode">
       <div className="container px-4">
-        <div className=" flex items-start justify-between lg:gap-20 md:gap-6 sm:gap-12 gap-4 pb-16">
+        <div className=" flex flex-wrap items-start justify-between lg:gap-20 md:gap-6 sm:gap-12 gap-4 pb-16">
           <div className="">
-            <div className="">
+            <div className="-ml-3">
               <Logo />
             </div>
-            <div className="ml-3">
+            <div className="">
               <div className="flex gap-6 items-center mt-8 relative z-1">
                 <Link href="https://x.com/DefendStack" className="group">
                   <Icon
@@ -71,7 +71,7 @@ const Footer: FC = () => {
               </Link>
             </div>
           </div>
-          <div className="flex items-start lg:gap-20 md:gap-6 sm:gap-12 gap-4">
+          <div className="flex flex-wrap items-start lg:gap-20 md:gap-6 sm:gap-12 gap-4">
             <div className="">
               <h4 className="text-white mb-4 font-medium text-24">Products</h4>
               <ul>
