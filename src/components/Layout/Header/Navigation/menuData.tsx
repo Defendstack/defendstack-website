@@ -24,10 +24,10 @@ export const headerData: HeaderItem[] = [
     label: "Resources",
     href: "",
     submenu: [
-      {
-        label: "Blog",
-        href: "/coming-soon",
-      },
+      // {
+      //   label: "Blog",
+      //   href: "/coming-soon",
+      // },
       {
         label: "Documentation",
         href: "https://docs.defendstack.org/Documentation/Introduction",
@@ -40,6 +40,6 @@ export const headerData: HeaderItem[] = [
   },
   {
     label: "About Us",
-    href: "/coming-soon",
+    href: "/about",
   },
 ];

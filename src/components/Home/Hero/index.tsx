@@ -90,7 +90,7 @@ const Hero = () => {
                   <span>Install Now</span>
                 </a>
                 <a
-                  href="/coming-soon"
+                  href="https://docs.defendstack.org/Documentation/Introduction"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center cursor-pointer bg-transparent border border-primary rounded-lg text-20 font-medium text-primary py-2 px-7 gap-2 w-full sm:w-auto"
                 >

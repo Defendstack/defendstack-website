@@ -37,7 +37,7 @@ const Upgrade = () => {
               </p>
               <div className="mx-auto max-w-[300px] sm:flex sm:max-w-[400px] sm:justify-center gap-2">
                 <a
-                  href="/coming-soon"
+                  href="https://docs.defendstack.org/Documentation/Introduction"
                   rel="noopener noreferrer"
                   className="cursor-pointer bg-primary border border-primary rounded-lg text-20 font-medium text-white py-2 px-7 flex items-center justify-center gap-2 mb-2 sm:mb-0 sm:mr-2 w-full"
                 >
