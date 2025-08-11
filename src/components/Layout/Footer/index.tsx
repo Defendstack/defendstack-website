@@ -25,10 +25,7 @@ const Footer: FC = () => {
                     className="text-white group-hover:text-primary"
                   />
                 </Link>
-                <Link
-                  href="https://discord.com/invite/CSeVbCvK"
-                  className="group"
-                >
+                <Link href="https://discord.gg/bStwgcQ9W2" className="group">
                   <Icon
                     icon="fa6-brands:discord"
                     width="24"
@@ -136,7 +133,7 @@ const Footer: FC = () => {
                   name="mail"
                   id="mail"
                   placeholder="Enter Email"
-                  className="bg-transparent border border-dark_border/60 py-4 text-white rounded-lg w-full mt-6 px-6"
+                  className="bg-transparent border border-dark_border/60 py-4 text-white rounded-lg w- mt-6 px-6"
                 />
                 <Icon
                   icon="tabler:send"

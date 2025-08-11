@@ -1,12 +1,12 @@
 import { title } from "process";
 
 export const resourcelabels: { label: string; href: string }[] = [
-  { label: "Blog", href: "/coming-soon" },
+  // { label: "Blog", href: "/coming-soon" },
   { label: "Documentation", href: "https://docs.defendstack.org/Documentation/Introduction" },
 ];
 
 export const securitylabels: { label: string; href: string }[] = [
-  { label: "Vulnerability Disclosure Program", href: "/coming-soon" },
+  { label: "Vulnerability Disclosure Program", href: "/security" },
 ];
 
 export const productslabels: { label: string; href: string }[] = [

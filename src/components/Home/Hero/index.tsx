@@ -8,10 +8,12 @@ import CardSlider from "./slider";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import ModalVideo from "@/components/Modal-Videos/modalVideo";
+import { InstallModal } from "./installModal";
 
 const Hero = () => {
   const [isBuying, setIsBuyingOpen] = useState(false);
   const [isSelling, setIsSellingOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const BuyRef = useRef<HTMLDivElement>(null);
   const SellRef = useRef<HTMLDivElement>(null);
 
@@ -76,7 +78,7 @@ const Hero = () => {
             </h1>
             <div className="flex lg:justify-start justify-center w-full">
               <div className="flex lg:justify-start flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md">
-                <a
+                {/* <a
                   href="https://github.com/Defendstack/DefendStack-Suite?tab=readme-ov-file#installation"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center cursor-pointer bg-primary border border-primary rounded-lg text-20 font-medium text-white py-2 px-7 gap-2 w-full sm:w-auto"
@@ -88,7 +90,20 @@ const Hero = () => {
                     height={20}
                   />
                   <span>Install Now</span>
-                </a>
+                </a> */}
+                <button
+                  type="button"
+                  onClick={() => setShowModal(true)}
+                  className="flex items-center justify-center cursor-pointer bg-primary border border-primary rounded-lg text-20 font-medium text-white py-2 px-7 gap-2 w-full sm:w-auto"
+                >
+                  <Image
+                    src="/images/hero/download.png"
+                    alt="icon"
+                    width={20}
+                    height={20}
+                  />
+                  <span>Install Now</span>
+                </button>
                 <a
                   href="https://docs.defendstack.org/Documentation/Introduction"
                   rel="noopener noreferrer"
@@ -138,6 +153,7 @@ const Hero = () => {
         <CardSlider />
       </div>
       <div className="absolute w-50 h-50 bg-linear-to-bl from-tealGreen from-50% to-charcoalGray to-60% blur-400 rounded-full -top-64 -right-14 -z-1"></div>
+      <InstallModal open={showModal} onClose={() => setShowModal(false)} />
     </section>
   );
 };
