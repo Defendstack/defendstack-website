@@ -11,7 +11,7 @@ const Platform = () => {
               Platform
             </h2>
             <p className='text-muted/60 text-18'>
-              Our products empower people to have safer and more
+              Our Projects empower people to have safer and more
               <br /> trustworthy experiences.
             </p>
           </div>

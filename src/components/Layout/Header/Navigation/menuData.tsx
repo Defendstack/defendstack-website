@@ -3,7 +3,7 @@ import { HeaderItem } from "@/types/menu";
 export const headerData: HeaderItem[] = [
   { label: "Home", href: "/" },
   {
-    label: "Products",
+    label: "Projects",
     href: "",
     submenu: [
       {
@@ -33,6 +33,10 @@ export const headerData: HeaderItem[] = [
         href: "https://docs.defendstack.org/Documentation/Introduction",
       },
     ],
+  },
+  {
+  label: "Success Stories",
+  href: "/success-stories",
   },
   {
     label: "Security",

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Link from "next/link";
 import { headerData } from "../Header/Navigation/menuData";
-import { productslabels, resourcelabels, securitylabels } from "@/app/api/data";
+import { Projectslabels, resourcelabels, securitylabels } from "@/app/api/data";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import Logo from "../Header/Logo";
@@ -70,9 +70,9 @@ const Footer: FC = () => {
           </div>
           <div className="flex flex-wrap items-start lg:gap-20 md:gap-6 sm:gap-12 gap-4">
             <div className="">
-              <h4 className="text-white mb-4 font-medium text-24">Products</h4>
+              <h4 className="text-white mb-4 font-medium text-24">Projects</h4>
               <ul>
-                {productslabels.map((item, index) => (
+                {Projectslabels.map((item, index) => (
                   <li key={index} className="pb-4">
                     <Link
                       href={item.href}

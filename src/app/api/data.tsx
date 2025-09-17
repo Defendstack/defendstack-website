@@ -9,7 +9,7 @@ export const securitylabels: { label: string; href: string }[] = [
   { label: "Vulnerability Disclosure Program", href: "/security" },
 ];
 
-export const productslabels: { label: string; href: string }[] = [
+export const Projectslabels: { label: string; href: string }[] = [
   {
     label: "DefendStack Secrets",
     href: "https://docs.defendstack.org/DefendStack-Secrets/Introduction",
