@@ -2,9 +2,13 @@ import { notFound } from "next/navigation";
 import SuccessStoryDetail from "@/components/SuccessStories/SuccessStoryDetail";
 import stories from "@/components/SuccessStories/TestomnialsData";
 
-export default async function SuccessStoryPage({ params }: { params: { slug: string } }) {
-  const story = stories.find((s) => s.slug === params.slug);
-  if (!story) return notFound();
-
+export default function SuccessStoryPage({ params }: any) {
+  const slug = params.slug;
+  const found = stories.find((s) => s.slug === slug);
+  if (!found) return notFound();
+  const story = {
+    ...found,
+    description: found.summary,
+  };
   return <SuccessStoryDetail {...story} />;
 }
