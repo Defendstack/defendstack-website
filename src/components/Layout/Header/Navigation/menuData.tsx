@@ -35,7 +35,7 @@ export const headerData: HeaderItem[] = [
     ],
   },
   {
-  label: "Success Stories",
+  label: "Testimonials",
   href: "/success-stories",
   },
   {

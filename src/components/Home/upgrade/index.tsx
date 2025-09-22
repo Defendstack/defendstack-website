@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Upgrade = () => {
   return (
-    <section className="md:py-40 py-20" id="upgrade">
+    <section className="md:pt-40 pt-20" id="upgrade">
       <div className="container px-4">
         <div
           className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-24 ml-20 -translate-x-1/2"
@@ -27,7 +27,7 @@ const Upgrade = () => {
                 Join us in redefining what it means to be secure
               </h2>
               <p
-                className="animate-[gradient_6s_linear_infinite] mb-8"
+                className="animate-[gradient_6s_linear_infinite] mb-8 text-white"
                 data-aos="fade-up"
               >
                 We envision a world where every business, regardless of size or

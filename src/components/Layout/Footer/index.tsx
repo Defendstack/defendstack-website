@@ -9,7 +9,7 @@ import Logo from "../Header/Logo";
 const Footer: FC = () => {
   return (
     <footer className="bg-darkmode">
-      <div className="container px-4">
+      <div className="container px-4 pt-20">
         <div className=" flex flex-wrap items-start justify-between lg:gap-20 md:gap-6 sm:gap-12 gap-4 pb-16">
           <div className="">
             <div className="-ml-3">

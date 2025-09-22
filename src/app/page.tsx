@@ -7,6 +7,7 @@ import Portfolio from "@/components/Home/portfolio";
 import Upgrade from "@/components/Home/upgrade";
 import Perks from "@/components/Home/perks";
 import { Metadata } from "next";
+import Testimonials from "@/components/Home/Testimonials";
 export const metadata: Metadata = {
   title: "DefendStack",
 };
@@ -20,6 +21,7 @@ export default function Home() {
       {/* <Platform />
       <Portfolio />
       <Perks /> */}
+      <Testimonials />
       <Upgrade />
     </main>
   );
